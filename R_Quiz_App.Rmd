@@ -1,0 +1,97 @@
+---
+title: "R - QUIZ"
+author: "`r paste(params$Name, params$Surname, params$StudentID)`"
+date: '`r format(Sys.time(), "%d/%m/%Y, %H:%M:%S")`'
+output: html_document
+linkcolor: black
+geometry: margin = 1.05in
+fontsize: 12pt
+params:
+  Name: NA
+  Surname: NA
+  StudentID: NA
+  Question1_code: NA
+  Question2_code: NA
+  Question3_code: NA
+---
+
+```{r include = FALSE}
+#knitr::opts_chunk$set(echo=FALSE,results='hide',fig.show = 'hide')
+```
+
+# Question 1:
+
+Write an R function that takes a vector of real numbers and returns minimum, average and sum of the elements respectively as a vector object.
+
+```{r echo=FALSE, eval=FALSE, results=FALSE}
+Oltulu_Q1 <- function(x){
+  return(c(minimum = min(x),
+           average = mean(x), 
+           sum = sum(x)))
+}
+```
+
+**Question 1 Code:**
+
+```{r}
+# Your code in characters: 
+params$Question1_code
+```
+
+**Your code:** 
+
+`r params$Question1_code`
+
+&nbsp; 
+
+
+# Question 2:
+
+Write an R function that that given a vector of real numbers and an integer, will return how many times the integer appears inside the vector.
+
+```{r echo=FALSE, eval=FALSE, results=FALSE}
+Oltulu_Q2 <- function(x,y){
+  return(sum(x==y))
+}
+```
+
+
+**Question 2 Code:**
+
+```{r}
+# Your code in characters: 
+params$Question2_code
+```
+
+**Your code:** 
+
+`r params$Question2_code`
+
+&nbsp; 
+
+
+# Question 3:
+
+Write an R function that takes a vector of values and returns a line graph. You have to add a custom title, y-axis label, and color to your plot.
+
+```{r echo=FALSE, eval=FALSE, results=FALSE}
+Oltulu_Q3 <- function(a){
+  return(plot(a, main = "Q3 plot", type = "l", col = "Blue", ylab = "y"))
+}
+```
+
+**Question 3 Code:**
+
+```{r}
+# Your code in characters: 
+params$Question3_code
+```
+
+**Your code:** 
+
+`r params$Question3_code`
+
+&nbsp; 
+
+
+
